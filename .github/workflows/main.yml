@@ -21,8 +21,7 @@ jobs:
       # 打包代码生成环境
       - name: Build
         run: |
-          # cd /home/www/stastic-web # 进入前端侧的工程目录
-          npm install # 安装依赖
+          npm ci # 安装依赖
           npm run build # 打包前端代码到生产环境（目标路径为：server/public）
 
       - name: Deploy
