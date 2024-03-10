@@ -1,7 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
-import ImgCard from '../components/Card.vue'
+import ImgCard from '../components/ImageCard.astro'
+import image206 from '../assets/img/206.jpg';
+import image098 from '../assets/img/098.jpg';
 ---
 
 <Layout title="Welcome to Astro.">
@@ -35,10 +37,9 @@ import ImgCard from '../components/Card.vue'
 			</defs>
 		</svg>
 		<h1 class="mt-8">Welcome to <span class="text-gradient">我们的婚礼</span></h1>
-		<div class="text-white font-extrabold text-xs">test</div>
 		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
+			<strong>2024年4月27日</strong>，我们将在<strong>山西阳泉 红玺会酒店</strong>举行婚礼。
+			<br>我们非常期待您的到来！
 		</p>
 		<ul role="list" class="grid grid-cols-2 gap-6">
 			<Card
@@ -51,12 +52,11 @@ import ImgCard from '../components/Card.vue'
 				title="Integrations"
 				body="Supercharge your project with new frameworks and libraries."
 			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
+			<ImgCard
+				image={image206}
 			/>
 			<ImgCard
+				image={image098}
 			/>
 		</ul>
 	</main>

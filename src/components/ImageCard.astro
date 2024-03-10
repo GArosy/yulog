@@ -1,0 +1,8 @@
+---
+import { Picture } from 'astro:assets';
+const { image } = Astro.props
+---
+
+<div class="border border-slate-500 rounded-lg overflow-hidden">
+  <Picture src={image} alt="image"/>
+</div>
