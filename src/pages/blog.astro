@@ -1,0 +1,16 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/Header.vue";
+import Footer from "../components/Footer.vue";
+---
+
+<BaseLayout pageTitle="博客">
+  <Header />
+  <div class="bg-gray-200 h-screen">
+    <h1>首页</h1>
+    <ul>
+      <li><a href="/posts/post-1/">文章 1</a></li>
+    </ul>
+	</div>
+  <Footer to="/p2" />
+</BaseLayout>

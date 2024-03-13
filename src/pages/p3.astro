@@ -1,0 +1,13 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/Header.vue";
+import Footer from "../components/Footer.vue";
+---
+
+<BaseLayout pageTitle="3">
+  <Header client:load />
+  <div class="bg-gray-200 h-screen">
+    <h1>3</h1>
+	</div>
+  <Footer to="/p4" />
+</BaseLayout>

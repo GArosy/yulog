@@ -1,0 +1,124 @@
+---
+import { ViewTransitions } from "astro:transitions";
+import Header from "../components/Header.vue";
+import Footer from "../components/Footer.vue";
+
+const { pageTitle } = Astro.props;
+
+const EASE_IN_OUT_QUART =
+  "cubic-bezier(0.76, 0, 0.24, 1)";
+const duration = "500ms";
+const customAnimate = {
+  forwards: {
+    old: [
+      {
+        name: "customOut",
+        duration: duration ?? "90ms",
+        // easing: EASE_IN_OUT_QUART,
+        // fillMode: "both",
+      },
+      {
+        name: "slideToTop",
+        duration: duration ?? "220ms",
+        // easing: EASE_IN_OUT_QUART,
+        // fillMode: "both",
+      },
+    ],
+    new: [
+      {
+        name: "customIn",
+        duration: duration ?? "210ms",
+        // easing: EASE_IN_OUT_QUART,
+        // delay: duration ? void 0 : "30ms",
+        // fillMode: "both",
+      },
+      {
+        name: "slideFromBottom",
+        duration: duration ?? "220ms",
+        // easing: EASE_IN_OUT_QUART,
+        // fillMode: "both",
+      },
+    ],
+  },
+  backwards: {
+    old: [
+      { name: "customOut" },
+      { name: "slideToBottom" },
+    ],
+    new: [
+      { name: "customIn" },
+      { name: "slideFromTop" },
+    ],
+  },
+};
+---
+
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/favicon.svg"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width"
+    />
+    <meta
+      name="generator"
+      content={Astro.generator}
+    />
+    <title>{pageTitle}</title>
+    <ViewTransitions />
+  </head>
+  <body>
+    <!-- <Header to="/" /> -->
+    <div transition:animate={customAnimate}>
+      <slot />
+    </div>
+    <!-- <Footer to="/" /> -->
+
+    <style>
+      @keyframes slideFromBottom {
+        from {
+          transform: translateY(100%);
+        }
+      }
+
+      @keyframes slideFromTop {
+        from {
+          transform: translateY(-100%);
+        }
+      }
+
+      @keyframes slideToBottom {
+        to {
+          transform: translateY(100%);
+        }
+      }
+
+      @keyframes slideToTop {
+        to {
+          transform: translateY(-100%);
+        }
+      }
+      @keyframes slideToTop {
+        to {
+          transform: translateY(-100%);
+        }
+      }
+      @keyframes customIn {
+        from {
+          /* opacity: 0; */
+        }
+      }
+
+      @keyframes customOut {
+        to {
+          /* opacity: 0; */
+        }
+      }
+    </style>
+  </body>
+</html>

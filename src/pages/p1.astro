@@ -1,0 +1,13 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Page1 from "./p1.vue";
+---
+
+<BaseLayout pageTitle="1">
+  <!-- <Header client:load/> -->
+  <!-- <div class="bg-gray-200 h-screen">
+    <h1>1</h1>
+	</div> -->
+  <Page1 client:visible />
+  <!-- <Footer to="/p2" client:load /> -->
+</BaseLayout>
