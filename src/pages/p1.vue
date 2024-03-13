@@ -1,11 +1,11 @@
 <template>
-  <Header client:load />
+  <Header />
   <div class="bg-gray-200 h-screen" ref="content">
     <h1>{{ isSwiping }}</h1>
     <h1>{{ direction }}</h1>
     <h1>{{ lengthY }}</h1>
   </div>
-  <Footer :to="'p2'" client:load />
+  <Footer :to="'p2'" />
 </template>
 
 <script setup>

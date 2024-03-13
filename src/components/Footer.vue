@@ -11,8 +11,5 @@ import { useSwipe } from "@vueuse/core";
 const props = defineProps({
   to: String,
 });
-const back = () => {
-  window.history.back();
-};
 const { isSwiping, direction } = useSwipe();
 </script>

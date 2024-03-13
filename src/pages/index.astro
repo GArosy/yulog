@@ -1,13 +1,17 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Footer from "../components/Footer.vue";
+import Invitacion from "../components/invitacion/index.vue"
 
 const pageTitle = "首页";
 ---
 
-<BaseLayout pageTitle={pageTitle}>
+<!-- <BaseLayout pageTitle={pageTitle}>
 	<div class="bg-gray-100 h-screen">
 		<h1>首页</h1>
 	</div>
   <Footer to="/p1" client:load/>
-</BaseLayout>
+</BaseLayout> -->
+<div>
+	<Invitacion client:load	/>
+</div>
