@@ -2,17 +2,12 @@
 import {
   ref, onMounted, watch,
 } from "vue"
+import { useSwipe } from "@vueuse/core";
+import { throttle } from 'lodash-es'
 import Page1 from './pages/page1.vue'
 import Page2 from './pages/page2.vue'
 import Page3 from './pages/page3.vue'
 import Page4 from './pages/page4.vue'
-
-const pageMap = {
-  1: Page1,
-  2: Page2,
-  3: Page3,
-  4: Page4,
-}
 
 const currentPage = ref(1)
 const isForward = ref(true)
@@ -27,13 +22,29 @@ const prevPage = () => {
   currentPage.value = currentPage.value - 1
 }
 
-watch(() => currentPage.value, (v) => {
-  console.log(v);
-})
+const container = ref(null);
+const hasPaged = ref(false);
+
+const { isSwiping, direction, lengthY } = useSwipe(container);
+watch([isSwiping, direction, lengthY], ([isSwiping, direction, lengthY]) => {
+  if (isSwiping) {
+    if (hasPaged.value) return // 防止连续触发翻页事件
+    if (direction === "up" && lengthY > 200) {
+      nextPage()
+      hasPaged.value = true
+    }
+    if (direction === "down" && lengthY < -200) {
+      prevPage()
+      hasPaged.value = true
+    }
+  } else {
+    hasPaged.value = false
+  }
+});
 </script>
 
 <template>
-  <div class="h-screen">
+  <div class="h-screen" ref="container">
     <Transition :name="isForward ? 'forward' : 'back'">
       <Page1 class="page" v-if="currentPage === 1" />
       <Page2 class="page" v-else-if="currentPage === 2" />

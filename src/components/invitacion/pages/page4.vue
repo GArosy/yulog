@@ -3,3 +3,10 @@
     page4
   </div>
 </template>
+
+<script setup>
+import {
+  inject,
+  ref, watch,
+} from "vue";
+</script>
