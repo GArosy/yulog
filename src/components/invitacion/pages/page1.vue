@@ -1,7 +1,7 @@
 <template>
   <div class="h-screen flex justify-center text-5xl" ref="page">
     <div class="flex flex-col items-center">
-      <img src="http://tva1.sinaimg.cn/large/007RIY06gy1hnqsw00rofj30rk0zy7wh.jpg" />
+      <img src="https://tva1.sinaimg.cn/mw690/007RIY06gy1hnqvql4dunj30rk0zy7wh.jpg"/>
       <div class="text-3xl mt-8 text-stone-500">2024. 4. 27</div>
       <div class="text-lg mt-1 text-stone-500">我们期待您的到来</div>
       <div class="flex gap-2 mt-12 items-center justify-center text-stone-500 text-lg">
@@ -46,6 +46,6 @@ setInterval(() => {
 
 <style scoped lang="scss">
 .time-box {
-  @apply w-12 h-12 rounded-full bg-[#c7bea9] flex justify-center items-center text-white text-3xl;
+  @apply w-12 h-12 rounded-full bg-[#c7bea9] flex justify-center items-center text-white text-2xl;
 }
 </style>
