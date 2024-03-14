@@ -44,7 +44,7 @@ watch([isSwiping, direction, lengthY], ([isSwiping, direction, lengthY]) => {
 </script>
 
 <template>
-  <div class="h-screen" ref="container">
+  <div class="h-screen bg-stone-50" ref="container">
     <Transition :name="isForward ? 'forward' : 'back'">
       <Page1 class="page" v-if="currentPage === 1" />
       <Page2 class="page" v-else-if="currentPage === 2" />
