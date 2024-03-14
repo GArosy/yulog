@@ -51,9 +51,9 @@ watch([isSwiping, direction, lengthY], ([isSwiping, direction, lengthY]) => {
       <Page3 class="page" v-else-if="currentPage === 3" />
       <Page4 class="page" v-else-if="currentPage === 4" />
     </Transition>
-    <div class="absolute w-full h-32 flex justify-center items-center cursor-pointer bg-translate" @click="prevPage"
+    <div class="absolute w-full h-16 flex justify-center items-center cursor-pointer bg-translate" @click="prevPage"
       v-if="currentPage !== 1">↑</div>
-    <div class="absolute w-full h-32 bottom-0 flex justify-center items-center cursor-pointer bg-translate"
+    <div class="absolute w-full h-16 bottom-0 flex justify-center items-center cursor-pointer bg-translate"
       @click="nextPage" v-if="currentPage !== 4">↓</div>
   </div>
 </template>

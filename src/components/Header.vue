@@ -1,6 +1,6 @@
 <template>
   <nav class="w-full absolute z-50">
-    <a @click="back" class="h-16 flex justify-center items-center cursor-pointer">
+    <a @click="back" class="h-8 flex justify-center items-center cursor-pointer">
       up
     </a>
   </nav>
