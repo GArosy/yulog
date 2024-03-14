@@ -1,7 +1,7 @@
 <template>
   <div class="h-screen flex justify-center text-5xl" ref="page">
     <div class="flex flex-col items-center">
-      <img src="https://tva1.sinaimg.cn/mw690/007RIY06gy1hnqvql4dunj30rk0zy7wh.jpg"/>
+      <img src="https://s21.ax1x.com/2024/03/14/pFgJC26.md.png" alt="pFgJC26.png" border="0" />
       <div class="text-3xl mt-8 text-stone-500">2024. 4. 27</div>
       <div class="text-lg mt-1 text-stone-500">我们期待您的到来</div>
       <div class="flex gap-2 mt-12 items-center justify-center text-stone-500 text-lg">
