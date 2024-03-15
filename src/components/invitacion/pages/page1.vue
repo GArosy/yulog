@@ -1,12 +1,22 @@
 <template>
+  <!-- <audio loop controls>
+    <source src="../../../assets/audio/bgm.mp3" type="audio/mpeg">
+  </audio> -->
   <div class="h-screen flex justify-center text-5xl" ref="page">
+    <audio loop controls ref="music" autoplay>
+      <source src="/bgm.mp3" type="audio/mpeg">
+    </audio>
+    <div @click="play"
+      class="fixed right-0 rounded-full w-10 h-10 m-5 bg-black/50 text-sm flex items-center justify-center"
+      :class="isPlaying ? 'animate-spin-slow' : ''">
+      <NIcon color="#fff" size="24">
+        <MusicNote120Regular />
+      </NIcon>
+    </div>
     <div class="flex flex-col items-center">
-      <!-- 路过 -->
-      <!-- <img src="https://s21.ax1x.com/2024/03/14/pFgJC26.md.png" alt="pFgJC26.png" border="0" /> -->
-      <!-- 聚合 -->
       <div
-        class="h-[70vh] w-screen sm:w-[640px] bg-[url(https://pic.imgdb.cn/item/65f436ea9f345e8d03b680b5.png)] bg-cover bg-center"
-      ></div>
+        class="h-[70vh] w-screen sm:w-[640px] bg-[url(https://pic.imgdb.cn/item/65f436ea9f345e8d03b680b5.png)] bg-cover bg-center">
+      </div>
       <div class="font-serif flex justify-center items-center gap-3 text-xl mt-5">
         <div>锟 斤 拷</div>
         <div class="text-lg">&</div>
@@ -32,7 +42,8 @@
 import {
   inject, ref, watch,
 } from "vue";
-// import { NCountdown } from 'naive-ui'
+import { MusicNote120Regular } from '@vicons/fluent'
+import { NIcon } from 'naive-ui'
 import dayjs from 'dayjs'
 const date = dayjs('2024-04-27')
 const time = ref({
@@ -51,6 +62,19 @@ setInterval(() => {
   }
 }, 1000)
 
+const music = ref(null)
+
+const isPlaying = ref(false)
+const play = () => {
+  if (!isPlaying.value) {
+    console.log(music, 'play');
+    music.value.play()
+  } else {
+    console.log(music, 'pause');
+    music.value.pause()
+  }
+  isPlaying.value = !isPlaying.value
+}
 
 </script>
 
