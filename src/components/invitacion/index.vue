@@ -3,7 +3,6 @@ import {
   ref, onMounted, watch,
 } from "vue"
 import { useSwipe } from "@vueuse/core";
-import { throttle } from 'lodash-es'
 import Page1 from './pages/page1.vue'
 import Page2 from './pages/page2.vue'
 import Page3 from './pages/page3.vue'
@@ -59,6 +58,10 @@ watch([isSwiping, direction, lengthY], ([isSwiping, direction, lengthY]) => {
 </template>
 
 <style>
+@font-face {
+  font-family: 'HYBS';
+  src: url(../../font/HYBS.woff2);
+}
 .forward-move, /* 对移动中的元素应用的过渡 */
 .forward-enter-active,
 .forward-leave-active {
