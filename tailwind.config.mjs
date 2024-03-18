@@ -5,6 +5,7 @@ export default {
 		extend: {
 			animation: {
         'spin-slow': 'spin 3s linear infinite',
+        'spin-slow-2': 'spin 40s linear infinite',
       },
 		},
 	},

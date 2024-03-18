@@ -6,6 +6,8 @@ import { useSwipe } from "@vueuse/core";
 
 import Up from './components/Up.vue'
 import Down from './components/Down.vue'
+import MusicIcon from '../../assets/icons/music.svg'
+import Loading from './components/Loading.vue'
 import Page1 from './pages/page1.vue'
 import Page2 from './pages/page2.vue'
 import Page3 from './pages/page3.vue'
@@ -74,18 +76,14 @@ provide('countdown', time)
       <source src="/bgm.mp3" type="audio/mpeg">
     </audio>
     <Transition name="fade">
-      <div class="absolute bg-stone-50 h-screen w-screen z-20 flex flex-col items-center" v-if="envelope" @click="onClick">
-        <div class="w-full max-w-[640px] h-[53%] bg-red-50"></div>
-        <!-- <div class="w-0 h-0" style="border-style: solid; border-width: 100px 320px 0 320px; border-color: #fcf2f2 transparent transparent transparent;"></div> -->
-        <div class="absolute top-1/2 p-4 text-2xl text-white bg-red-600 rounded-full">点击打开</div>
-      </div>
+      <Loading v-if="envelope" @click="onClick"/>
     </Transition>
     <div
       class="fixed right-0 rounded-full w-10 h-10 m-5 bg-black/50 text-sm flex items-center justify-center z-10"
       :class="isPlaying ? 'animate-spin-slow' : ''"
       @click="play"
     >
-      <img src="../../assets/icon/music.svg" alt="music" class="w-6 h-6" />
+      <img :src="MusicIcon.src" alt="music" class="w-6 h-6" />
     </div>
     <Transition :name="isForward ? 'forward' : 'back'">
       <Page1 class="page" v-if="currentPage === 1" />
