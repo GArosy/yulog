@@ -12,6 +12,7 @@
   "dependencies": {
     "@astrojs/tailwind": "^5.1.0",
     "@astrojs/vue": "^4.0.8",
+    "@vicons/utils": "^0.1.4",
     "@vueuse/core": "^10.9.0",
     "astro": "^4.4.13",
     "dayjs": "^1.11.10",
