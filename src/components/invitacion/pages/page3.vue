@@ -12,7 +12,7 @@
     <div class="mt-6">
       <Calendar />
     </div>
-    <div class="fixed bottom-[15%] text-center flex flex-col items-center">
+    <div class="fixed bottom-[18%] text-center flex flex-col items-center">
       <div class="flex gap-2 mt-16 text-xl mb-4">
         <span class="font-light">/</span>
         <span class="font-[font2]">倒计时</span>
@@ -20,13 +20,13 @@
       </div>
       <Countdown :time="time"/>
     </div>
-    <div class="fixed h-12 w-12 top-0 left-0 m-2 "
+    <div class="fixed h-12 w-12 top-0 left-0 m-3"
       style="border-top: 1px solid #9b2c1c ;border-left: 1px solid #9b2c1c ;" />
-    <div class="fixed h-12 w-12 top-0 right-0 m-2 "
+    <div class="fixed h-12 w-12 top-0 right-0 m-3"
       style="border-top: 1px solid #9b2c1c ;border-right: 1px solid #9b2c1c ;" />
-    <div class="fixed h-12 w-12 bottom-0 left-0 m-2 "
+    <div class="fixed h-12 w-12 bottom-0 left-0 m-3"
       style="border-bottom: 1px solid #9b2c1c;border-left: 1px solid #9b2c1c;" />
-    <div class="fixed h-12 w-12 bottom-0 right-0 m-2 "
+    <div class="fixed h-12 w-12 bottom-0 right-0 m-3"
       style="border-bottom: 1px solid #9b2c1c;border-right: 1px solid #9b2c1c;" /> 
   </div>
 </template>

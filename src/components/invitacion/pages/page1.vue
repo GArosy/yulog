@@ -10,7 +10,7 @@
           <div>婚</div>
           <div>啦</div>
         </div>
-        <div class="flex flex-col justify-center items-center text-xl font-[font2] text-[#9b2c1c]">
+        <div class="flex flex-col justify-center items-center text-2xl font-[font2] text-[#9b2c1c]">
           <div>
             Mr.高胜禹
           </div>
@@ -32,10 +32,10 @@
           <div>红玺汇酒店</div>
         </div>
       </div>
-      <div class="fixed h-12 w-12 top-0 left-0 m-2 " style="border-top: 1px solid #fff9;border-left: 1px solid #fff9;" />
-      <div class="fixed h-12 w-12 top-0 right-0 m-2 " style="border-top: 1px solid #fff9;border-right: 1px solid #fff9;" />
-      <div class="fixed h-12 w-12 bottom-0 left-0 m-2 " style="border-bottom: 1px solid #9b2c1c;border-left: 1px solid #9b2c1c;" />
-      <div class="fixed h-12 w-12 bottom-0 right-0 m-2 " style="border-bottom: 1px solid #9b2c1c;border-right: 1px solid #9b2c1c;" />
+      <div class="fixed h-12 w-12 top-0 left-0 m-3" style="border-top: 1px solid #fff9;border-left: 1px solid #fff9;" />
+      <div class="fixed h-12 w-12 top-0 right-0 m-3" style="border-top: 1px solid #fff9;border-right: 1px solid #fff9;" />
+      <div class="fixed h-12 w-12 bottom-0 left-0 m-3" style="border-bottom: 1px solid #9b2c1c;border-left: 1px solid #9b2c1c;" />
+      <div class="fixed h-12 w-12 bottom-0 right-0 m-3" style="border-bottom: 1px solid #9b2c1c;border-right: 1px solid #9b2c1c;" />
     </div>
   </div>
 </template>

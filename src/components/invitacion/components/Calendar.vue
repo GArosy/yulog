@@ -13,7 +13,7 @@
       <div
         v-for="day in calendarData" 
         :key="day"
-        class="py-1 px-2.5 flex flex-col justify-center items-center" 
+        class="py-1 px-2.5 flex flex-col justify-center items-center text-red-800" 
         :class="{ 'opacity-50': day.isOtherMonth }"
       >
         <div
@@ -21,7 +21,6 @@
           v-if="day.isMarked"
         />
         <div 
-          class="text-red-800"
           :class="day.isMarked && 'text-[#d8b76e] font-semibold'"
         >
           {{ day.date }}

@@ -1,8 +1,8 @@
 <template>
-  <div class="h-screen w-screen sm:w-[640px] flex flex-col items-center font-[fzkt] text-red-800">
+  <div class="h-screen w-screen sm:w-[640px] flex flex-col items-center font-[fzkt] text-[#9b2c1c]">
 
     <div class="flex flex-col items-center gap-6 text-lg">
-      <div class="flex flex-col items-center mt-[64px]">
+      <div class="flex flex-col items-center mt-[72px]">
         <span>我们决定</span>
         <span>在2024年4月27日这一天</span>
         <span>将携手走过的无数个日夜</span>
@@ -30,18 +30,18 @@
         </div>
       </div>
     </div>
-    <div class="fixed bottom-[12%] text-center">
+    <div class="fixed bottom-[15%] text-center">
       <div style="border-top: 1px solid #9b2c1c ;border-bottom: 1px solid #9b2c1c ;">
         <span class="font-[font2] text-red-700 text-2xl">好久不见，婚礼见</span>
       </div>
     </div>
-    <div class="fixed h-12 w-12 top-0 left-0 m-2 "
+    <div class="fixed h-12 w-12 top-0 left-0 m-3"
       style="border-top: 1px solid #9b2c1c ;border-left: 1px solid #9b2c1c ;" />
-    <div class="fixed h-12 w-12 top-0 right-0 m-2 "
+    <div class="fixed h-12 w-12 top-0 right-0 m-3"
       style="border-top: 1px solid #9b2c1c ;border-right: 1px solid #9b2c1c ;" />
-    <div class="fixed h-12 w-12 bottom-0 left-0 m-2 "
+    <div class="fixed h-12 w-12 bottom-0 left-0 m-3"
       style="border-bottom: 1px solid #9b2c1c;border-left: 1px solid #9b2c1c;" />
-    <div class="fixed h-12 w-12 bottom-0 right-0 m-2 "
+    <div class="fixed h-12 w-12 bottom-0 right-0 m-3"
       style="border-bottom: 1px solid #9b2c1c;border-right: 1px solid #9b2c1c;" />
   </div>
 </template>
