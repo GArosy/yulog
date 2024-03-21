@@ -1,9 +1,6 @@
 <template>
-  <div class="sm:w-[640px] calendar">
-    <div class="header">
-      <h2>4月 2024</h2>
-    </div>
-    <div class="grid grid-cols-7 text-xs text-stone-500 text-center">
+  <div class="sm:w-[490px] calendar font-sans">
+    <div class="grid grid-cols-7 mb-1 py-0.5 text-xs text-[#d8b76e] text-center bg-[#9b2c1c] rounded-full">
       <div>日</div>
       <div>一</div>
       <div>二</div>
@@ -16,34 +13,31 @@
       <div
         v-for="day in calendarData" 
         :key="day"
-        class="py-2 px-3 flex flex-col justify-center items-center" 
+        class="py-1 px-2.5 flex flex-col justify-center items-center" 
         :class="{ 'opacity-50': day.isOtherMonth }"
       >
         <div
-          class="absolute w-11 h-11 rounded-full bg-red-200 -z-10"
+          class="absolute w-10 h-10 rounded-full bg-[#9b2c1c] -z-10"
           v-if="day.isMarked"
         />
         <div 
-          class="text-stone-700"
-          :class="day.isMarked && 'text-red-600 font-semibold'"
+          class="text-red-800"
+          :class="day.isMarked && 'text-[#d8b76e] font-semibold'"
         >
           {{ day.date }}
         </div>
         <div
-          class="text-[10px] mt-0.5 text-stone-400"
-          :class="day.isMarked && 'text-red-600 font-semibold'"
+          class="text-[8px] text-stone-400"
+          :class="day.isMarked && 'text-[#d8b76e] font-semibold'"
         >
           {{ day.lunar }}
         </div>
       </div>
     </div>
-    <div></div>
   </div>
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
-
 const calendarData = [
   {
     date: '31',
@@ -196,13 +190,7 @@ const calendarData = [
 
 <style>
 .calendar {
-  padding: 8px;
-  font-size: 20px;
-}
-
-.header {
-  text-align: center;
-  margin-bottom: 8px;
+  @apply p-2 text-base leading-4;
 }
 
 .days {

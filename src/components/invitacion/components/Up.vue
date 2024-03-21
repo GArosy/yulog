@@ -1,6 +1,6 @@
 <template>
   <div class="absolute w-full h-16 flex justify-center items-center cursor-pointer bg-translate">
-    <img :src="Icon.src" alt="music" class="w-6 h-6" />
+    <img :src="Icon.src" alt="music" class="w-6 h-6 text-[#9b2c1c]" />
   </div>
 </template>
 

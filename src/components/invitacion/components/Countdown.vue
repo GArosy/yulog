@@ -1,5 +1,5 @@
 <template>
-  <div class="flex gap-2 mt-4 items-center justify-center text-stone-500 text-lg">
+  <div class="flex gap-2 ml-4 items-center justify-center text-red-700 text-lg">
     <div class="time-box">{{ time.day }}</div>
     <div>天</div>
     <div class="time-box">{{ time.hour }}</div>
@@ -31,6 +31,6 @@ const { time } = toRefs(props)
 
 <style scoped lang="scss">
 .time-box {
-  @apply w-12 h-12 rounded-full bg-[#c7bea9] flex justify-center items-center text-white font-sans text-2xl;
+  @apply w-11 h-11 rounded-full bg-[#9b2c1c] flex justify-center items-center text-[#d8b76e] font-[font2] text-2xl;
 }
 </style>
