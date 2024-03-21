@@ -98,8 +98,16 @@ provide('countdown', time)
 
 <style>
 @font-face {
-  font-family: 'HYBS';
+  font-family: 'font1';
   src: url(../../font/HYBS.woff2);
+}
+@font-face {
+  font-family: 'font2';
+  src: url(../../font/HanYiZhongSong.ttf);
+}
+@font-face {
+  font-family: 'fzkt';
+  src: url(../../font/FangZhengKaiTiJianTi.ttf);
 }
 .fade-move,
 .fade-enter-active,
