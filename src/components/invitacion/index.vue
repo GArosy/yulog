@@ -103,11 +103,11 @@ provide('countdown', time)
 }
 @font-face {
   font-family: 'font2';
-  src: url(../../font/HanYiZhongSong.ttf);
+  src: url(../../font/HanYiZhongSong.woff2);
 }
 @font-face {
   font-family: 'fzkt';
-  src: url(../../font/FangZhengKaiTiJianTi.ttf);
+  src: url(../../font/FangZhengKaiTiJianTi.woff2);
 }
 .fade-move,
 .fade-enter-active,

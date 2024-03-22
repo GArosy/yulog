@@ -10,20 +10,20 @@
           <div>婚</div>
           <div>啦</div>
         </div>
-        <div class="flex flex-col justify-center items-center text-2xl font-[font2] text-[#9b2c1c]">
-          <div>
+        <div class="flex flex-col justify-center items-center text-2xl font-[font2] text-red-900">
+          <div class="text-red-900">
             Mr.高胜禹
           </div>
           <div class="relative flex items-center justify-center w-1/2">
             <div class="h-px bg-red-700 w-1/4"></div>
             <div class="text-base text-red-700 leading-4">&</div>
             <div class="h-px bg-red-700 w-1/4"></div>
-            <div class="absolute bottom-0 flex justify-between gap-40 text-[80px] font-black italic text-red-100">
+            <div class="absolute bottom-0 flex justify-between gap-40 text-[80px] font-black text-red-100">
               <div>04</div>
               <div>27</div>
             </div>
           </div>
-          <div>
+          <div class="text-red-900">
             Ms.王雪蓉
           </div>
         </div>

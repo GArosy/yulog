@@ -5,7 +5,7 @@
       <div class="flex flex-col items-center mt-[72px]">
         <span>我们决定</span>
         <span>在2024年4月27日这一天</span>
-        <span>将携手走过的无数个日夜</span>
+        <span>将携手走过的有限个日夜</span>
         <span>延续至无限个互相陪伴的时刻</span>
       </div>
       <div class="flex flex-col items-center">
