@@ -99,15 +99,15 @@ provide('countdown', time)
 <style>
 @font-face {
   font-family: 'font1';
-  src: url(../../font/font-spider/HYBS.ttf);
+  src: url(../../font/HYBS.ttf);
 }
 @font-face {
   font-family: 'font2';
-  src: url(../../font/font-spider/HanYiZhongSong.ttf);
+  src: url(../../font/HanYiZhongSong.ttf);
 }
 @font-face {
   font-family: 'fzkt';
-  src: url(../../font/font-spider/FangZhengKaiTiJianTi.ttf);
+  src: url(../../font/FangZhengKaiTiJianTi.ttf);
 }
 .fade-move,
 .fade-enter-active,
