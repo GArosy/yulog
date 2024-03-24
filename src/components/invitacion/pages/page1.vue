@@ -16,7 +16,7 @@
           </div>
           <div class="relative flex items-center justify-center w-1/2">
             <div class="h-px bg-red-700 w-1/4"></div>
-            <div class="text-base text-red-700 leading-4">&</div>
+            <div class="text-base text-red-700 leading-4 font-[fzkt]">&</div>
             <div class="h-px bg-red-700 w-1/4"></div>
             <div class="absolute bottom-0 flex justify-between gap-40 text-[80px] font-black text-red-100">
               <div>04</div>

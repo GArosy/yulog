@@ -2,7 +2,7 @@
   <div class="h-screen w-screen sm:w-[640px] flex flex-col items-center text-[#9b2c1c] text-lg font-[font2]">
     <div class="flex gap-2 mt-16 text-xl">
       <span class="font-light">/</span>
-      <span class="font-[font2]">时间 Time</span>
+      <span class="font-[font2]">时间</span>
       <span class="font-light">/</span>
     </div>
     <div class="flex flex-col items-center mt-6">
