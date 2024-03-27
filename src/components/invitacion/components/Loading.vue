@@ -22,8 +22,8 @@
       </div>
       <!-- image -->
       <img
-        class="relative rounded-full mx-8 my-4 sm:w-[380px] blur-none animate-spin-slow-2"
-        src="https://pic.imgdb.cn/item/65f883319f345e8d031309b7.jpg" 
+        class="relative rounded-full px-6 py-6 sm:w-[380px] sm:h-[380px] blur-none animate-spin-slow-2"
+        src="https://pic.imgdb.cn/item/6603de6f9f345e8d03542102.jpg" 
         alt="1.jpg"
       >
       <!-- text -->
