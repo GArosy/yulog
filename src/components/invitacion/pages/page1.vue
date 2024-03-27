@@ -1,7 +1,7 @@
 <template>
   <div class="font-[font1] h-screen flex justify-center text-base text-red-900" ref="page">
     <div class="flex flex-col items-center">
-      <div class="h-[70vh] w-screen sm:w-[640px] bg-[url(https://pic.imgdb.cn/item/65f436ea9f345e8d03b680b5.png)] bg-cover bg-center" />
+      <div class="h-[70vh] w-screen sm:w-[640px] bg-[url(https://pic.imgdb.cn/item/6603c5a09f345e8d038df618.jpg)] bg-cover bg-center" />
       <div class="sm:w-[490px] w-full h-[30vh] flex-col flex justify-between">
         <div class="flex justify-between items-center text-xl px-6 py-1 italic">
           <div>我</div>
