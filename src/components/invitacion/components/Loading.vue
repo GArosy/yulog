@@ -1,8 +1,10 @@
 <template>
   <div class="absolute bg-stone-50 h-screen w-screen z-20 flex overflow-hidden">
+    <!-- <div
+      class="absolute bg-cover bg-[url('https://pic.imgdb.cn/item/660569dc9f345e8d03060d1a.jpg')] h-screen w-screen sm:w-[490px] flex flex-col items-center justify-start"
+    /> -->
     <div
-      class="absolute bg-cover bg-[url('https://pic.imgdb.cn/item/6603de6f9f345e8d03542102.jpg')] h-screen w-screen sm:w-[490px] flex flex-col items-center justify-start"
-      :class="isIOS ? 'blur-2xl': 'blur-3xl'"
+      class="absolute bg-cover bg-[url('https://img2.imgtp.com/2024/03/28/X1QOQ276.jpg')] h-screen w-screen sm:w-[490px] flex flex-col items-center justify-start"
     />
     <div class="absolute flex flex-col justify-center items-center w-full" >
       <!-- header -->
@@ -26,8 +28,8 @@
       <!-- image -->
       <img
         class="relative rounded-full px-6 py-6 sm:w-[380px] sm:h-[380px] blur-none animate-spin-slow-2"
-        :class="isIOS ? 'px-6 py-6 w-[85vw] h-[85vw]' : ''"
-        src="https://pic.imgdb.cn/item/6603de6f9f345e8d03542102.jpg" 
+        :class="isIOS ? 'px-6 py-6 w-[90vw] h-[90vw]' : ''"
+        src="https://img2.imgtp.com/2024/03/28/9C7EC0qe.jpg" 
         alt="1.jpg"
       >
       <!-- text -->
