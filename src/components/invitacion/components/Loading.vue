@@ -1,10 +1,10 @@
 <template>
-  <div class="absolute bg-stone-50 h-screen w-screen z-20 flex overflow-hidden">
+  <div class="absolute bg-stone-50 h-screen w-screen z-20 flex overflow-hidden justify-center">
     <!-- <div
       class="absolute bg-cover bg-[url('https://pic.imgdb.cn/item/660569dc9f345e8d03060d1a.jpg')] h-screen w-screen sm:w-[490px] flex flex-col items-center justify-start"
     /> -->
     <div
-      class="absolute bg-cover bg-[url('https://img2.imgtp.com/2024/03/28/X1QOQ276.jpg')] h-screen w-screen sm:w-[490px] flex flex-col items-center justify-start"
+      class="absolute bg-cover bg-[url('https://img2.imgtp.com/2024/03/28/X1QOQ276.jpg')] h-screen w-screen flex flex-col items-center justify-center"
     />
     <div class="absolute flex flex-col justify-center items-center w-full" >
       <!-- header -->
@@ -33,7 +33,7 @@
         alt="1.jpg"
       >
       <!-- text -->
-      <div class="flex flex-col w-full px-8">
+      <div class="flex flex-col w-full px-8 sm:w-[440px] ">
         <div class="flex justify-start items-center gap-1.5 mb-2">
           <div class="text-sm text-white/70 bg-stone-400/40 rounded-full px-2">
             2024年
