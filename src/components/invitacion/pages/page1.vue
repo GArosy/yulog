@@ -1,7 +1,10 @@
 <template>
   <div class="font-[font1] h-screen flex justify-center text-base text-[#92322d]" ref="page">
     <div class="flex flex-col items-center">
-      <div class="h-[70vh] w-screen sm:w-[640px] bg-[url(https://pic.imgdb.cn/item/6603c5a09f345e8d038df618.jpg)] bg-cover bg-center" />
+      <div 
+        class="w-screen sm:w-[640px] bg-[url(https://pic.imgdb.cn/item/6603c5a09f345e8d038df618.jpg)] bg-cover bg-center"
+        :class="isIOS ? 'h-[60vh]' : 'h-[70vh]'" 
+      />
       <div class="sm:w-[490px] w-full h-[30vh] flex-col flex justify-between">
         <div class="flex justify-between items-center text-xl px-6 py-1 italic">
           <div>我</div>
@@ -41,9 +44,9 @@
 </template>
 
 <script setup lang="ts">
-import {
-  inject, ref, watch,
-} from "vue";
+import { inject } from 'vue'
+
+const isIOS = inject('isIOS')
 </script>
 
 <style scoped lang="scss">

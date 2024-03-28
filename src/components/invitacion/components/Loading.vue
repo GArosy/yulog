@@ -1,9 +1,12 @@
 <template>
-  <div class="absolute bg-stone-50 h-screen w-screen z-20 flex justify-center overflow-hidden">
-    <div class="absolute object-fill bg-[url('https://pic.imgdb.cn/item/65f883319f345e8d031309b7.jpg')] h-screen w-screen sm:w-[490px] flex flex-col items-center justify-start blur-3xl" />
-    <div class="absolute flex flex-col justify-center" >
+  <div class="absolute bg-stone-50 h-screen w-screen z-20 flex overflow-hidden">
+    <div
+      class="absolute bg-cover bg-[url('https://pic.imgdb.cn/item/6603de6f9f345e8d03542102.jpg')] h-screen w-screen sm:w-[490px] flex flex-col items-center justify-start"
+      :class="isIOS ? 'blur-2xl': 'blur-3xl'"
+    />
+    <div class="absolute flex flex-col justify-center items-center w-full" >
       <!-- header -->
-      <div class="flex justify-between px-4 mt-3">
+      <div class="flex justify-between px-4 mt-3 w-full">
         <svg fill="none" viewBox="0 0 24 24" stroke-width="2" class="w-6 h-6 stroke-white">
           <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
         </svg>
@@ -23,6 +26,7 @@
       <!-- image -->
       <img
         class="relative rounded-full px-6 py-6 sm:w-[380px] sm:h-[380px] blur-none animate-spin-slow-2"
+        :class="isIOS ? 'px-6 py-6 w-[85vw] h-[85vw]' : ''"
         src="https://pic.imgdb.cn/item/6603de6f9f345e8d03542102.jpg" 
         alt="1.jpg"
       >
@@ -100,5 +104,7 @@
 </template>
 
 <script setup>
+import { inject } from 'vue'
 
+const isIOS = inject('isIOS')
 </script>

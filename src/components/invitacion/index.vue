@@ -68,6 +68,15 @@ const onClick = () => {
 
 const { time } = useCountdown()
 provide('countdown', time)
+
+const userAgent = ref('')
+const isIOS = ref(false)
+provide('isIOS', isIOS)
+onMounted(() => {
+  userAgent.value = window.navigator.userAgent
+  const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|phone|Mobile/i.test(userAgent)
+  isIOS.value = /iPhone/i.test(userAgent.value)
+})
 </script>
 
 <template>

@@ -30,7 +30,10 @@
         </div>
       </div>
     </div>
-    <div class="fixed bottom-[15%] text-center">
+    <div 
+      class="fixed text-center"
+      :class="isIOS ? 'bottom-[10%]' : 'bottom-[15%]'"
+    >
       <div style="border-top: 1px solid #9b2c1c ;border-bottom: 1px solid #9b2c1c ;">
         <span class="font-[font2] text-red-700 text-2xl">好久不见，婚礼见</span>
       </div>
@@ -47,7 +50,7 @@
 </template>
 
 <script setup>
-import {
-  inject, ref, watch,
-} from "vue";
+import { inject } from 'vue'
+
+const isIOS = inject('isIOS')
 </script>
